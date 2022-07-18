@@ -3,8 +3,6 @@ This repository contains the code, test patches and weights for the paper [Deep 
 
 # Dataset (Source)
 ---------------------
-You can download the data from the link below
-
 [Turkey 1:200k Historical Topographic Maps](https://urbanoccupations.ku.edu.tr/historical-road-types-for-turkey-1940s/)
 
 The historical DHK 200 Turkey map used in this study covers a large area of around
@@ -14,8 +12,9 @@ maps [1].
 
 | Model              | Batch-Size | F-1 Score | No. Of Params |  Weights | 
 |:--------------------------:|:------------------:|-------------------------:|-------------------------:|-------------------------:|
-|Timm-resnest200e(U-Net++)   | 16 Batch-Size      | **0,577**   |      68M      | [Timm-resnest200e.pth](https://drive.google.com/drive/folders/146HRDz-075PTf-pyUQO-1ZrU4X1UQ5L2)                                 
-|Timm-resnest200e(MA-Net)                         | 16 Batch-Size                 | 0,525      |       68M          | [MA-Net timm-resnest200e.pth](https://drive.google.com/drive/folders/146HRDz-075PTf-pyUQO-1ZrU4X1UQ5L2) 
+|Timm-resnest200e(U-Net++)   | 16 Batch-Size      | **0,577**   |      68M      | [Timm-resnest200e.pth](https://drive.google.com/drive/folders/146HRDz-075PTf-pyUQO-1ZrU4X1UQ5L2) 
+|Timm-resnest200e(U-Net++ scSE)                         | 16 Batch-Size                 | 0,542      |       68M          | [scSE timm-resnest200e.pth](https://drive.google.com/drive/folders/146HRDz-075PTf-pyUQO-1ZrU4X1UQ5L2) 
+|Timm-resnest200e(MA-Net)                         | 16 Batch-Size                 | 0,541     |       68M          | [MA-Net timm-resnest200e.pth](https://drive.google.com/drive/folders/146HRDz-075PTf-pyUQO-1ZrU4X1UQ5L2) 
 |Inceptionv4(U-Net++)                          | 16 Batch-Size                 | 0,525         |      54M        | [Inceptionv4.pth](https://drive.google.com/drive/folders/146HRDz-075PTf-pyUQO-1ZrU4X1UQ5L2)                
 |Densenet201(U-Net++)                          | 16 Batch-Size                 | 0,511       |      18M         | [Densenet201.pth](https://drive.google.com/drive/folders/146HRDz-075PTf-pyUQO-1ZrU4X1UQ5L2)
 |Resnext50_32x4d(U-Net++)                          | 16 Batch-Size                | 0,491      |      42M          | [Resnext50_32x4d.pth](https://drive.google.com/drive/u/0/folders/1zQfCouyg3uVd76KNzYpbvrFJ4DGfUPdp)
@@ -34,14 +33,15 @@ maps [1].
 ---------------------
 ![alt text](figures/framework.png)
 
-
-# Models Comparison
+# Outputs
 ---------------------
-![alt text](figures/comparison.png)
+![alt text](figures/1.png)
 
-Outputs
+# Classwise Metrics for Best Model Unet++ Timm-Resnest200e
 ---------------------
-![alt text](figures/resnest200e.png)
+![alt text](figures/2.png)
+
+
 
 
 
